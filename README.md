@@ -14,6 +14,7 @@ The goal of this challenge was to:
 <ol>
 <li> Design a reinforcement learning algorithm to learn how to play the game, 
 and train it ;
+<li> Have an average of 15 pipes or more on a 100 games ;
 <li> modify 'FlappyPolicy.py' in order to implement the function 
 `FlappyPolicy(state,screen)` used in the `run.py` file without modifying 
 `run.py`. `FlappyPolicy(state,screen)` takes both the game state and the screen 
@@ -115,4 +116,13 @@ afterwards. Finally the rewards are the following :
 - if the bird dies, the reward is `-100`
 
 ### 4.3 Learning
+
+The algorithm used here is a SARSA algorithm with TD(0), and is sufficient to
+have an average of more than 30 pipes on a hundred games. It could be improved
+by using a TD(lambda) method rather than TD(0), since the correlation between
+each step is definitely important.
+
 ### 4.4 Results
+
+Several models were built and with different learning phase times, but all of 
+those available int the `models` folder do have an average of 30 or better. 
