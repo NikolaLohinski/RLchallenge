@@ -1,5 +1,7 @@
 # Flappy bird : a reinforcement learning challenge
 
+_Author : [Nikola LOHINSKI](https://github.com/NikolaLohinski)_
+
 _This repository contains the work done during a reinforcement learning 
 challenge where the goal was to learn to play 
 [Flappy Bird](https://en.wikipedia.org/wiki/Flappy_Bird). It is a 
